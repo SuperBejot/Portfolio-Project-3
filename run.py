@@ -31,19 +31,19 @@ if (first_choice == "yes"):
         third_choice = input(">")
 
         if (third_choice == "yes"):
-            print("It looks like your cell in the middle of a long, dark corridor.")
+            print("It looks like your cell is in the middle of a long, dark corridor.")
             print("The only way out is to go left or right.")
             print("---------------------------------------------")
             print("Where you want to go next? (left/right)")
 
             fourth_choice = input(">")
 
-            if(fourth_choice == "left"):
+            if (fourth_choice == "left"):
                 print("By taking the path leading left, you reaching the prison guard barracks.")
                 print("You are immediately noticed by 4 opponents.")
                 print("You are killed instantly.")
                 print("GAME OVER")
-            elif(fourth_choice == "right"):
+            elif (fourth_choice == "right"):
                 print("At the end of the right path, you see a guard sleeping in a chair.")
                 print("Behind him, you see a door leading to the city streets.")
                 print("To your freedom.")
@@ -51,9 +51,22 @@ if (first_choice == "yes"):
                 print("Will you decide to sneak under the nose of a sleeping guard?")
                 print("or do you want to turn back and try another escape route?")
                 print("sneek/go back")
+
+                fifth_choice = input("> ")
+
+                if (fifth_choice == "sneek"):
+                    print("The risk paid off!")
+                    print("You escaped from prison!")
+                    print("GAME OVER! Well Done!")
+                elif (fifth_choice == "go back"):
+                    print("You turn back")
+                    print("but you end up straight in the hands of a guard checking around the prison.")
+                    print("you go back to your cell")
+                    print("GAME OVER")
+                else:
+                    print("Invalid choice, please enter sneek or go back")
             else:
                 print("Invalid choice, please enter left or right")
-
 
         elif (third_choice == "no"):
             print("What is wrong with you?")
@@ -61,7 +74,6 @@ if (first_choice == "yes"):
             print("GAME OVER")
         else:
             print("Invalid choice, please enter yes or no")
-
 
     elif (secend_choice == "no"):
         print("I thought you wouldn't give up so easily.")
